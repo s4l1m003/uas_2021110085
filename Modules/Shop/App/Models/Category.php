@@ -27,16 +27,16 @@ class Category extends Model
 
     public function children()
     {
-        return $this->hasMany('Modules\Shop\Entities\Category', 'parent_id');
+        return $this->hasMany('Modules\Shop\Models\Category', 'parent_id');
     }
 
     public function parent()
     {
-        return $this->belongsTo('Modules\Shop\Entities\Category', 'parent_id');
+        return $this->belongsTo('Modules\Shop\Models\Category', 'parent_id');
     }
 
     public function products()
     {
-        return $this->belongsToMany('Modules\Shop\Entities\Product', 'shop_categories_products', 'product_id', 'category_id');
+        return $this->belongsToMany('Modules\Shop\Models\Product', 'shop_categories_products', 'product_id', 'category_id');
     }
 }
