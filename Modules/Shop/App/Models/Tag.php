@@ -9,7 +9,7 @@ use App\Traits\UuidTrait;
 
 class Tag extends Model
 {
-    use , UuidTrait;
+    use HasFactory , UuidTrait;
 
 
     protected $table = 'shop_categories';
@@ -24,6 +24,6 @@ class Tag extends Model
     }
     public function products()
     {
-        return $this->belongsToMany('Modules\Shop\Entities\Product', 'shop_products_tags', 'tag_id', 'product_id');
+        return $this->belongsToMany('Modules\Shop\Models\Product', 'shop_products_tags', 'tag_id', 'product_id');
     }
 }
