@@ -8,13 +8,14 @@ use Modules\Shop\Database\factories\ProductImageFactory;
 
 class ProductImage extends Model
 {
-    use HasFactory;
+    use HasFactory, UuidTrait;
 
-    /**
-     * The attributes that are mass assignable.
-     */
-    protected $fillable = [];
-    
+    protected $table = 'shop_product_images';
+
+    protected $fillable = [
+        'product_id',
+        'name',
+    ];
     protected static function newFactory(): ProductImageFactory
     {
         //return ProductImageFactory::new();
