@@ -6,8 +6,9 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Module\Shop\Database\Seeders\ShopDatabaseSeeder;
 use App\Models\User
+
 class DatabaseSeeder extends Seeder
-{
+
     /**
      * Seed the application's database.
      */
