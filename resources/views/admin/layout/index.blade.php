@@ -25,7 +25,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     @stack('style')
-    <title>Toko Gaming Onglen | {{ $title }}</title>
+    <title>Toko Online Gaming | {{ $title }}</title>
 </head>
 
 <body>
