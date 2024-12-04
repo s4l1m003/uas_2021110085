@@ -1,0 +1,101 @@
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    background-color: rgba(255, 255, 255, 0.744);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.text-links {
+    cursor: pointer;
+}
+
+.links-login {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #000000e0;
+    padding: 10px;
+    width: 200px;
+    z-index: 9999;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.activeLogin {
+    visibility: visible;
+    opacity: 1;
+}
+
+.links-login > a:hover {
+    color: #ff0000;
+}
+
+.links-login > a {
+    color: #ff0000;
+}
+
+.circle {
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.86);
+    color: white;
+    font-size: 12px;
+    padding: 2px 9px;
+}
+.notif {
+    position: relative;
+    display: inline-block;
+}
+.fa-bag-shopping {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.686);
+}
+.fa-bag-shopping:hover {
+    color: rgba(0, 0, 0, 0.867);
+}
+
+section {
+    min-height: 80vh;
+}
+
+/* style footer */
+footer {
+    position: static;
+    bottom: 0;
+    background-color: #ff0000;
+    color: white;
+}
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 97vh;
+}
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+.sidebar li {
+    list-style: none;
+    padding: 10px 5px;
+}
+.sidebar li:hover {
+    background-color: rgba(255, 255, 255, 0.518);
+    border-radius: 10px;
+    margin: 0;
+}
+.sidebar h5 {
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
