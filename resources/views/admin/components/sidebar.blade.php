@@ -1,6 +1,6 @@
 <aside
     class="sidebar navbar navbar-expand-lg bg-dark d-flex flex-column gap-4 align-content-lg-center mx-2 my-2 rounded">
-    <h5 class="navbar-brand">Toko Online Gaming</h5>
+    <h5 class="navbar-brand">Toko Gaming Onglen</h5>
     <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
         <ul class="navbar-nav flex-column gap-3 px-2">
             <li class="navbar-item rounded {{ Request::path() === 'admin/dashboard' ? 'bg-info' : '' }} ">

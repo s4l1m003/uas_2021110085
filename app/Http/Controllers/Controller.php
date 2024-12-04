@@ -98,7 +98,7 @@ class Controller extends BaseController
         ];
         $detailTransaksi::create($fieldDetail);
 
-        // update cart
+        // update cart 
         $fieldCart = [
             'qty'          => $data['qty'],
             'price'        => $data['total'],
